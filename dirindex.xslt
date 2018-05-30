@@ -27,9 +27,17 @@
 				<xsl:if test="not(. = 'lost+found')">
 				<div class="subdir">
 					<div class="dirtag">[dir]</div>
-					<xsl:variable name="name"><xsl:value-of select="." /></xsl:variable>
-					<div class="name"><a href="{$name}"><xsl:value-of select="." />/</a></div>
-					<div class="mtime"><xsl:value-of select="@mtime" /></div>
+					<xsl:variable name="name">
+						<xsl:value-of select="." />
+					</xsl:variable>
+					<div class="name">
+						<a href="{$name}">
+							<xsl:value-of select="." />/
+						</a>
+					</div>
+					<div class="mtime">
+						<xsl:value-of select="@mtime" />
+					</div>
 				</div>
 			</xsl:if>
 			</xsl:for-each>
@@ -40,9 +48,15 @@
 					<xsl:if test="string-length(@size) &gt; 0">
 						<xsl:if test="number(@size) &gt; 0">
 							<xsl:choose>
-								<xsl:when test="round(@size div 1024) &lt; 1"><xsl:value-of select="@size" /></xsl:when>
-								<xsl:when test="round(@size div 1048576) &lt; 1"><xsl:value-of select="format-number((@size div 1024), '0.0')" />K</xsl:when>
-								<xsl:otherwise><xsl:value-of select="format-number((@size div 1048576), '0.00')" />M</xsl:otherwise>
+								<xsl:when test="round(@size div 1024) &lt; 1">
+									<xsl:value-of select="@size" />
+								</xsl:when>
+								<xsl:when test="round(@size div 1048576) &lt; 1">
+									<xsl:value-of select="format-number((@size div 1024), '0.0')" />K
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:value-of select="format-number((@size div 1048576), '0.00')" />M
+								</xsl:otherwise>
 							</xsl:choose>
 						</xsl:if>
 					</xsl:if>
