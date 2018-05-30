@@ -14,7 +14,9 @@
 		</h1>
 		<p>
 			If you don't like how this looks, patches to
-			<a href="/css/dirindex.css">the css</a>
+			<a href="https://github.com/dannyedel/nginx-dirindex">
+				this script
+			</a>
 			are very welcome!
 		</p>
 		<div id="dotdot">
