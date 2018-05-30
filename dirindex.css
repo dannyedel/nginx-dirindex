@@ -1,0 +1,23 @@
+a {
+	text-decoration: none;
+}
+
+div#dotdot, div#subdirectories, div#files {
+	margin: 0.5em;
+}
+div.file, div.subdir {
+	clear: both;
+	padding: 0.5em;
+}
+
+div.dirtag, div.subdir div.name {
+	display: inline;
+}
+
+h1, div.name {
+	word-break: break-all;
+}
+
+div.mtime {
+	display: none;
+}
