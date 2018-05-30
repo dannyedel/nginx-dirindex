@@ -5,6 +5,7 @@ a {
 div#dotdot, div#subdirectories, div#files {
 	margin: 0.5em;
 }
+
 div.file, div.subdir {
 	clear: both;
 	padding: 0.5em;
