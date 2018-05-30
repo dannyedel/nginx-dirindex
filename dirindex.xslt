@@ -49,9 +49,22 @@
 				</xsl:variable>
 				<xsl:variable name="name"><xsl:value-of select="." /></xsl:variable>
 				<div class="file">
-					<div class="name"><a href="{$name}"><xsl:value-of select="." /></a></div>
-					<div class="size"><xsl:value-of select="$size" /></div>
-					<div class="mtime"><xsl:value-of select="@mtime" /></div>
+					<div class="name">
+						<a href="{$name}">
+							<xsl:value-of select="." />
+						</a>
+					</div>
+					<div class="size">
+						<xsl:value-of select="$size" />
+					</div>
+					<div class="downloadlink">
+						<a href="{$name}?download">
+							[download]
+						</a>
+					</div>
+					<div class="mtime">
+						<xsl:value-of select="@mtime" />
+					</div>
 				</div>
 			</xsl:for-each>
 		</div>

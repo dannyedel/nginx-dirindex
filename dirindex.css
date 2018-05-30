@@ -15,6 +15,11 @@ div.dirtag, div.subdir div.name {
 	display: inline;
 }
 
+div.file div.size,
+div.file div.downloadlink {
+	display: inline;
+}
+
 h1, div.name {
 	word-break: break-all;
 }
