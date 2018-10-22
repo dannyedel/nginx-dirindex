@@ -12,7 +12,7 @@
 		<h1>
 			Index of <xsl:value-of select="$location" />
 		</h1>
-		<p>
+		<p id="fixmemessage">
 			If you don't like how this looks, patches to
 			<a href="https://github.com/dannyedel/nginx-dirindex">
 				this script
