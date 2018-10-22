@@ -4,83 +4,92 @@ body {
 
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 43rem;
-	padding: 1rem;
+	max-width: 40rem;
+	padding: 0.3rem;
 
 	background-color: lightcyan;
 }
 
-body.h1 {
+body h1 {
 	text-align: center;
+	word-break: break-all;
 }
 
-body.p {
+body p {
 	text-align: center;
 	font-style: italic;
 }
 
-div#dotodot {
+body p a:hover {
+	text-decoration: underline;
+	color: black;
+	font-weight: bold;
+}
+
+div#dotdot {
 	margin: 2rem auto 2rem auto;
 }
 
 a.dotdot {
-	background-color: turquoise;
+	display: inherit;
+	text-align: center;
+
+	background-color: rgb(64, 224, 208);
 	padding: 12px;
 	border-radius: 5px;
-	margin-bottom: 8rem;
 }
 
-a.dotdot:hover {
-	color: white;
+.file {
+	margin-bottom: 0.5rem;
 }
 
-.subdir {
-	background-color: turquoise;
+.name {
+	margin-bottom: 0.5rem;
+}
+
+.name a {
+	overflow-wrap: break-word;
+	display: inherit;
+	text-align: center;
+	font-weight: bold;
+	background-color: rgb(64, 224, 208);
+	padding: 12px;
 	border-radius: 5px;
-	margin: 0.5rem 0rem;
 }
 
-a {
-	color: black;
-	text-decoration: none;
+a.dotdot:hover,
+.name a:hover {
+	/* color: white; */
+	background-color: rgb(44, 204, 188);
 }
 
-a:hover {
-	color: white;
+.size {
+	display: inline;
+	font-size: 10pt;
+	font-style: italic;
 }
 
+.downloadlink {
+	display: inline;
+	margin-left: 1rem;
+}
+
+.downloadlink {
+	background-color: rgb(127, 255, 212);
+	padding: 0.3rem;
+	border-radius: 5px;
+}
+
+.downloadlink:hover {
+	background-color: rgb(107, 235, 192);
+}
+
+.mtime {
+	display: none;
+}
+a,
 a:focus,
 a:active {
 	color: black;
-}
-
-div#dotdot,
-div#subdirectories,
-div#files {
-	/* margin: 0.5em; */
-}
-
-div.file,
-div.subdir {
-	clear: both;
-	padding: 0.5em;
-}
-
-div.dirtag,
-div.subdir div.name {
-	display: inline;
-}
-
-div.file div.size,
-div.file div.downloadlink {
-	display: inline;
-}
-
-h1,
-div.name {
-	word-break: break-all;
-}
-
-div.mtime {
-	display: none;
+	text-decoration: none;
 }
