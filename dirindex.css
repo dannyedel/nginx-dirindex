@@ -15,9 +15,8 @@ body h1 {
 	word-break: break-all;
 }
 
-body p {
-	text-align: center;
-	font-style: italic;
+p#fixmemessage {
+	display: none;
 }
 
 body p a:hover {
