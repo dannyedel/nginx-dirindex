@@ -68,6 +68,17 @@
 							<xsl:value-of select="." />
 						</a>
 					</div>
+					<xsl:if test="contains($name, '.mp3')">
+						<div class="audioplayer">
+							<audio
+								preload="none"
+								controls="controls"
+								src="{$name}"
+								>
+								FIXME Audio Player for ${name} goes here
+							</audio>
+						</div>
+					</xsl:if>
 					<div class="size">
 						<xsl:value-of select="$size" />
 					</div>

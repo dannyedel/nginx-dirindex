@@ -97,3 +97,7 @@ a:active {
 	color: black;
 	text-decoration: none;
 }
+
+audio {
+	width: 100%
+}
